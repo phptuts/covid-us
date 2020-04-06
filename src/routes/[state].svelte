@@ -37,8 +37,10 @@
   <title>Covid 19 Tracker - {stateData.fullStateName}</title>
 </svelte:head>
 
-<div class="container">
-  <h1>{stateData.fullStateName}</h1>
+<div class="section header">
+  <div class="container">
+    <h1>Covid 19 - {stateData.fullStateName}</h1>
+  </div>
 </div>
 <CovidInfo {...stateData} />
 <CovidChart title=" Covid-19 / {stateData.fullStateName}" {historicData} />
