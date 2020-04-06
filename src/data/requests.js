@@ -13,7 +13,7 @@ export const getBasicData = async () => {
     return cache.get(basicDataCacheKey);
   }
 
-  const request = await axios.get('http://covidtracking.com/api/us');
+  const request = await axios.get('https://covidtracking.com/api/us');
 
   const [covidInfo] = request.data;
 
