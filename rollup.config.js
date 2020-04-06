@@ -78,6 +78,7 @@ export default {
       replace({
         'process.browser': false,
         'process.env.NODE_ENV': JSON.stringify(mode),
+        'process.env.PORT': 4231
       }),
       svelte({
         generate: 'ssr',
